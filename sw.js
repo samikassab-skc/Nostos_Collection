@@ -4,6 +4,7 @@ const ASSETS = [
   "./",
   "./index.html",
 
+  "./catalogue_produits.html",
   "./concierge_IA.html",
   "./chef-a-domicile.html",
   "./degustation-vin.html",
@@ -11,11 +12,19 @@ const ASSETS = [
   "./la_region.html",
 
   "./manifest.json",
-
   "./photo.jpg",
 
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+
+  "./panier1.jpg",
+  "./panier2.jpg",
+  "./panier3.jpg",
+  "./panier4.jpg",
+  "./panier5.jpg",
+  "./panier6.jpg",
+  "./panier7.jpg",
+  "./panier8.jpg"
 ];
 
 self.addEventListener("install", (event) => {
