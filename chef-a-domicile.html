@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chef à domicile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+
+    background-image:
+    linear-gradient(
+        rgba(0,18,58,0.50),
+        rgba(0,18,58,0.85)
+    ),
+    url("./photo.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:white;
+    min-height:100vh;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px 60px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 18px;
+    background:rgba(255,255,255,0.15);
+    border-radius:14px;
+    text-decoration:none;
+    color:white;
+    backdrop-filter:blur(10px);
+}
+
+.hero-image{
+    margin-bottom:30px;
+}
+
+.hero-image img{
+    width:100%;
+    height:400px;
+
+    object-fit:cover;
+    object-position:center;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:2.3rem;
+    color:#ffd890;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#e5e7eb;
+    line-height:1.8;
+}
+
+.card{
+    background:rgba(255,255,255,0.10);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.10);
+    border-radius:24px;
+    padding:28px;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#ffd890;
+    font-size:1.15rem;
+    font-weight:600;
+}
+
+.features{
+    display:grid;
+    gap:15px;
+}
+
+.feature{
+    background:rgba(255,255,255,.08);
+    padding:18px;
+    border-radius:18px;
+}
+
+.feature h3{
+    color:#ffd890;
+    margin-bottom:8px;
+}
+
+.cta{
+    text-align:center;
+    margin-top:35px;
+}
+
+.cta a{
+    display:inline-block;
+    background:white;
+    color:#00123a;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:18px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.cta a:hover{
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:rgba(255,255,255,.75);
+}
+
+.footer img{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    margin-bottom:12px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.30);
+}
+
+@media (max-width:768px){
+
+    .hero-image img{
+        height:280px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back-btn">
+        ← Retour aux services
+    </a>
+
+    <div class="hero-image">
+        <img
+            src="chef-a-domicile-photo1.png"
+            alt="Chef à domicile">
+    </div>
+
+    <div class="hero">
+
+        <h1>👨‍🍳 Chef à domicile</h1>
+
+        <p>
+            L'expérience d'un restaurant gastronomique,
+            dans l'intimité de votre villa.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <p class="highlight">
+            Il n'y a pas de restaurant plus intime que votre propre maison,
+            où vous pouvez être à l'aise avec les personnes qui vous sont chères.
+        </p>
+
+        <p>
+            Désormais, vous pouvez apporter la magie d'un restaurant gastronomique
+            à votre table grâce à des chefs talentueux qui élaborent
+            un menu entièrement adapté à vos goûts et à vos envies.
+        </p>
+
+        <p>
+            Profitez d'un moment unique sans quitter votre villa.
+            Pendant que votre chef prépare chaque plat avec soin,
+            vous partagez un instant privilégié avec votre famille
+            ou vos amis dans un cadre exclusif.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2 style="color:#ffd890;margin-bottom:20px;">
+            ✨ Une expérience sur mesure
+        </h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>🍽️ Menu personnalisé</h3>
+                <p>
+                    Chaque repas est imaginé selon vos goûts,
+                    vos préférences alimentaires et vos envies du moment.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🥂 Moment convivial</h3>
+                <p>
+                    Recevez vos proches autour d'une table élégante
+                    sans avoir à vous soucier de l'organisation.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🌿 Produits de qualité</h3>
+                <p>
+                    Découvrez une cuisine raffinée mettant à l'honneur
+                    les saveurs locales et les produits de saison.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🏡 Dans votre villa</h3>
+                <p>
+                    Transformez votre lieu de séjour en restaurant privé
+                    le temps d'une soirée mémorable.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2 style="color:#ffd890;margin-bottom:15px;">
+            🍷 Une soirée à votre image
+        </h2>
+
+        <p>
+            Dîner romantique, repas entre amis, célébration familiale,
+            anniversaire ou occasion spéciale :
+            chaque prestation est conçue pour créer
+            un souvenir inoubliable.
+        </p>
+
+        <p>
+            Transformez votre maison en restaurant
+            et offrez-vous une expérience culinaire unique.
+        </p>
+
+    </div>
+
+    <div class="cta">
+
+        <a href="#">
+            Demande de réservation
+        </a>
+
+    </div>
+
+    <div class="footer">
+
+        <img
+            src="icon-192.png"
+            alt="Nostos Collection">
+
+        <div>
+            Nostos Collection • Créateur de souvenirs mémorables.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

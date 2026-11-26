@@ -1,99 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#001b44">
+<title>Nostos Collection</title>
 
-  <title>Nostos Collection</title>
+<link rel="manifest" href="./manifest.json">
 
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      margin:0;
-      background:#f7f8fa;
-      color:#333;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    .hero{
-      max-width:900px;
-      margin:auto;
-      text-align:center;
-      padding:80px 20px;
-    }
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  min-height:100vh;
+  color:white;
 
-    h1{
-      font-size:3rem;
-      margin-bottom:20px;
-    }
+  background:
+    linear-gradient(
+      rgba(0,18,58,0.55),
+      rgba(0,18,58,0.80)
+    ),
+    url("./photo.jpg");
 
-    p{
-      font-size:1.2rem;
-      line-height:1.6;
-    }
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
 
-    .btn{
-      display:inline-block;
-      margin-top:30px;
-      padding:15px 30px;
-      background:#0d6efd;
-      color:white;
-      text-decoration:none;
-      border-radius:8px;
-    }
+.container{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:28px;
+}
 
-    .features{
-      display:flex;
-      gap:30px;
-      justify-content:center;
-      flex-wrap:wrap;
-      margin-top:60px;
-    }
+.badge{
+  display:inline-block;
+  align-self:flex-start;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(255,215,120,.15);
+  border:1px solid rgba(255,215,120,.4);
+  color:#ffd890;
+  font-weight:600;
+  letter-spacing:.5px;
+}
 
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:12px;
-      width:250px;
-      box-shadow:0 4px 12px rgba(0,0,0,.08);
-    }
-  </style>
+.hero{
+  margin-top:24px;
+}
+
+.hero h1{
+  font-size:2.4rem;
+  line-height:1.1;
+  margin-bottom:14px;
+  max-width:650px;
+}
+
+.hero p{
+  color:#e5e7eb;
+  font-size:1.05rem;
+  line-height:1.6;
+  max-width:650px;
+}
+
+.services{
+  display:grid;
+  gap:12px;
+  margin-top:32px;
+}
+
+.service-btn{
+  border:none;
+  border-radius:18px;
+  padding:18px;
+  font-size:1rem;
+  cursor:pointer;
+  text-align:left;
+  transition:.25s ease;
+  backdrop-filter:blur(10px);
+}
+
+.service-btn:hover{
+  transform:translateY(-2px);
+}
+
+.primary{
+  background:white;
+  color:#001b44;
+  font-weight:700;
+}
+
+.secondary{
+  background:rgba(255,255,255,.15);
+  color:white;
+  border:1px solid rgba(255,255,255,.15);
+}
+
+.footer{
+  text-align:center;
+  color:rgba(255,255,255,.75);
+  font-size:.85rem;
+  margin-top:20px;
+}
+
+@media (min-width:768px){
+
+  .container{
+    max-width:900px;
+    margin:auto;
+  }
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <section class="hero">
+<div class="container">
 
-    <h1>Nostos Collection</h1>
+<div>
+  <div class="badge">NOSTOS COLLECTION</div>
+
+  <section class="hero">
+    <h1>Bienvenue dans votre expérience exclusive</h1>
 
     <p>
-      Transform every stay into an unforgettable experience.
-      Discover local services, activities, wellness treatments
-      and personalized recommendations directly from your villa.
+      Profitez pleinement de votre séjour grâce à notre sélection de
+      services premium et à notre concierge intelligent disponible
+      à tout moment.
     </p>
-
-    <a class="btn" href="#">
-      Coming Soon
-    </a>
-
-    <div class="features">
-
-      <div class="card">
-        <h3>AI Concierge</h3>
-        <p>24/7 assistance for guests.</p>
-      </div>
-
-      <div class="card">
-        <h3>Experiences</h3>
-        <p>Book massages, chauffeurs and activities.</p>
-      </div>
-
-      <div class="card">
-        <h3>Property Hub</h3>
-        <p>One platform for hosts and operators.</p>
-      </div>
-
-    </div>
-
   </section>
+</div>
+
+<section class="services">
+
+  <button class="service-btn primary">
+    🤖 Concierge IA
+  </button>
+
+  <button
+    class="service-btn secondary"
+    onclick="window.location.href='chef-a-domicile.html'">
+    🍽️ Chef à domicile
+</button>
+
+ <button
+  class="service-btn secondary"
+  onclick="window.location.href='degustation-vin.html'">
+  🍷 Dégustation de vin à domicile
+</button>
+
+<button
+    class="service-btn secondary"
+    onclick="window.location.href='bien-etre-soins.html'">
+    💆 Bien-être et Soins
+</button>
+
+  <button class="service-btn secondary">
+    🧺 Achats de produits locaux
+  </button>
+
+  <button class="service-btn secondary">
+    🌄 Découverte de la Région
+  </button>
+
+</section>
+
+<div class="footer">
+
+  <img
+    src="./icon-192.png"
+    alt="Nostos Collection"
+    class="footer-logo"
+  >
+
+  <div class="footer-text">
+    Votre séjour, réinventé.
+  </div>
+
+</div>
+
+</div>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then(() => console.log("Service Worker enregistré"))
+      .catch((err) => console.error(err));
+  });
+}
+</script>
 
 </body>
 </html>

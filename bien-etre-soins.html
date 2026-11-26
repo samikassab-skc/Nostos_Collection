@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bien-être et Soins</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+
+    background-image:
+    linear-gradient(
+        rgba(0,18,58,0.50),
+        rgba(0,18,58,0.85)
+    ),
+    url("./photo.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:white;
+    min-height:100vh;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px 60px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:12px 18px;
+    background:rgba(255,255,255,0.15);
+    border-radius:14px;
+    text-decoration:none;
+    color:white;
+    backdrop-filter:blur(10px);
+}
+
+.hero-image{
+    margin-bottom:30px;
+}
+
+.hero-image img{
+    width:100%;
+    height:400px;
+
+    object-fit:cover;
+    object-position:center;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:2.3rem;
+    color:#ffd890;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#e5e7eb;
+    line-height:1.8;
+}
+
+.card{
+    background:rgba(255,255,255,0.10);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.10);
+    border-radius:24px;
+    padding:28px;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#ffd890;
+    font-size:1.15rem;
+    font-weight:600;
+}
+
+.cta{
+    text-align:center;
+    margin-top:35px;
+}
+
+.cta a{
+    display:inline-block;
+    background:white;
+    color:#00123a;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:18px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.cta a:hover{
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:rgba(255,255,255,.75);
+}
+
+.footer img{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    margin-bottom:12px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.30);
+}
+
+@media (max-width:768px){
+
+    .hero-image img{
+        height:280px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back-btn">
+        ← Retour aux services
+    </a>
+
+    <div class="hero-image">
+        <img
+            src="coiffure-a-domicile-photo1.png"
+            alt="Bien-être et soins à domicile">
+    </div>
+
+    <div class="hero">
+
+        <h1>💆 Bien-être et Soins</h1>
+
+        <p>
+            Offrez-vous un moment de détente et de beauté
+            dans le confort de votre villa.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <p class="highlight">
+            Être capable de créer des styles uniques et répondre à vos envies est ce qui me motive chaque jour.
+        </p>
+
+        <p>
+            Passionnée par la coiffure depuis plus de 15 ans,
+            j'ai d'abord travaillé dans plusieurs salons afin de
+            développer mes compétences et perfectionner mon savoir-faire.
+        </p>
+
+        <p>
+            Il y a quelques années, j'ai décidé de me lancer dans
+            le monde de l'entrepreneuriat. Une étape importante dans
+            ma vision de la coiffure qui me permet aujourd'hui
+            d'offrir un service plus personnalisé à mes clientes.
+        </p>
+
+        <p>
+            Mon objectif est de créer une atmosphère chaleureuse
+            où nous pouvons échanger et élaborer ensemble
+            un diagnostic sur mesure afin de répondre
+            précisément à vos attentes.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2 style="color:#ffd890;margin-bottom:15px;">
+            ✨ Une prestation personnalisée
+        </h2>
+
+        <p>
+            Chaque personne est unique.
+            Votre coiffure et votre style le sont également.
+        </p>
+
+        <p>
+            Profitez d'un service réalisé directement sur votre lieu de séjour,
+            sans déplacement ni contrainte d'organisation.
+        </p>
+
+        <p>
+            Dans un environnement calme et détendu,
+            prenez le temps de vous faire plaisir
+            et de bénéficier de conseils adaptés à votre personnalité.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2 style="color:#ffd890;margin-bottom:15px;">
+            🌿 Un moment rien que pour vous
+        </h2>
+
+        <p>
+            Que ce soit avant une soirée,
+            un mariage,
+            une séance photo,
+            une célébration familiale
+            ou simplement pour vous sentir bien pendant vos vacances,
+            chaque prestation est pensée pour créer
+            un véritable moment de bien-être.
+        </p>
+
+        <p>
+            Laissez-vous chouchouter dans le cadre exceptionnel de votre villa
+            pendant que nous prenons soin de vous.
+        </p>
+
+    </div>
+
+    <div class="cta">
+
+        <a href="#">
+            Demande de réservation
+        </a>
+
+    </div>
+
+    <div class="footer">
+
+        <img
+            src="icon-192.png"
+            alt="Nostos Collection">
+
+        <div>
+            Nostos Collection • Créateur de souvenirs mémorables.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
