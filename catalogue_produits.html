@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produits Locaux - Nostos Collection</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    color:white;
+    background:
+    linear-gradient(
+        rgba(0,18,58,0.55),
+        rgba(0,18,58,0.85)
+    ),
+    url("./photo.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:30px;
+}
+
+.back-btn{
+    display:inline-block;
+    padding:12px 18px;
+    background:rgba(255,255,255,.15);
+    border-radius:16px;
+    text-decoration:none;
+    color:white;
+    margin-bottom:25px;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.hero h1{
+    color:#ffd890;
+    margin-bottom:15px;
+    font-size:2.5rem;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.7;
+}
+
+
+.advantages{
+    max-width:650px;
+    margin:25px auto 0 auto;
+    text-align:left;
+    line-height:2;
+}
+
+.advantages div{
+    margin-bottom:6px;
+}
+
+
+.basket-grid{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.basket-card{
+    display:flex;
+    flex-direction:row;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(12px);
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.12);
+    min-height:320px;
+}
+
+.basket-image{
+    width:360px;
+    min-width:360px;
+    aspect-ratio:1/1;
+    object-fit:contain;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    padding:15px;
+}
+
+.basket-content{
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.basket-title{
+    color:#ffd890;
+    margin-bottom:12px;
+}
+
+.price{
+    font-size:1.8rem;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.description{
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.basket-content ul{
+    margin-left:20px;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.order-section{
+    margin-top:auto;
+}
+
+.quantity-box{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.quantity-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#ffffff;
+    color:#00123a;
+    font-size:22px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.quantity{
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.order-btn{
+    width:100%;
+    border:none;
+    padding:15px;
+    border-radius:16px;
+    background:#ffd890;
+    color:#00123a;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.order-btn:hover{
+    background:#ffe2aa;
+}
+
+.footer{
+    text-align:center;
+    margin-top:50px;
+    padding-bottom:30px;
+}
+
+.footer img{
+    display:block;
+    width:70px;
+    margin:0 auto 15px auto;
+}
+
+.footer p{
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    .basket-card{
+        flex-direction:column;
+    }
+
+    .basket-image{
+        width:100%;
+        min-width:100%;
+        height:240px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back-btn">
+← Retour à l'accueil
+</a>
+
+<div class="hero">
+<h1>🧺 Produits locaux & paniers gourmands</h1>
+
+<p>
+Découvrez notre sélection de coffrets élaborés à partir des meilleures spécialités artisanales du Languedoc.
+Chaque panier est soigneusement préparé auprès de producteurs locaux afin de vous faire vivre une véritable expérience gustative régionale.
+</p>
+
+<br>
+
+<p>
+✅ Produits artisanaux de qualité<br>
+✅ Sélectionnés auprès de producteurs et épiceries fines locales<br>
+✅ Coffrets prêts à offrir<br>
+✅ Livraison directement dans votre villa avant votre check-out
+</p>
+</div>
+
+<div class="basket-grid">
+
+<div class="basket-card">
+
+<img src="panier1.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🍷 Panier N°1 - L'Apéritif Languedocien
+</h2>
+
+<div class="price">58 €</div>
+
+<p class="description">
+Un apéritif complet aux saveurs méditerranéennes.
+Parfait pour partager un moment convivial autour des spécialités emblématiques du Sud.
+</p>
+
+<ul>
+<li>Tapenade noire artisanale</li>
+<li>Rouille sétoise</li>
+<li>Croûtons à l'ail</li>
+<li>Pâtés nîmois</li>
+<li>Vin rouge Pic Saint-Loup</li>
+<li>Olives Lucques</li>
+</ul>
+
+<div class="quantity-box">
+
+<button class="quantity-btn" onclick="minus(this)">-</button>
+
+<span class="quantity">1</span>
+
+<button class="quantity-btn" onclick="plus(this)">+</button>
+
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier2.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🍪 Panier N°2 - Les Douceurs du Terroir
+</h2>
+
+<div class="price">35 €</div>
+
+<p class="description">
+Une sélection gourmande idéale pour un goûter régional ou pour faire plaisir aux enfants.
+</p>
+
+<ul>
+<li>Zézettes de Sète</li>
+<li>Confiture artisanale de figues</li>
+<li>Grisettes de Montpellier</li>
+<li>Pâte à tartiner artisanale</li>
+<li>Jus de fruits local</li>
+</ul>
+
+<div class="quantity-box">
+
+<button class="quantity-btn" onclick="minus(this)">-</button>
+
+<span class="quantity">1</span>
+
+<button class="quantity-btn" onclick="plus(this)">+</button>
+
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier3.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🐟 Panier N°3 - Dîner au Fil de l'Étang
+</h2>
+
+<div class="price">72 €</div>
+
+<p class="description">
+Une immersion complète dans les traditions culinaires de Sète. Un panier conçu pour réaliser un authentique repas autour de la célèbre soupe de poissons de roche de la Méditerranée.
+</p>
+
+<ul>
+<li>Soupe de poissons de roche artisanale</li>
+<li>Rouille sétoise traditionnelle</li>
+<li>Croûtons à l'ail</li>
+<li>Gruyère râpé AOP</li>
+<li>Craquelins de Sète</li>
+<li>Moules en escabèche</li>
+<li>Vin blanc Picpoul de Pinet</li>
+</ul>
+
+<div class="quantity-box">
+<button class="quantity-btn" onclick="minus(this)">-</button>
+<span class="quantity">1</span>
+<button class="quantity-btn" onclick="plus(this)">+</button>
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier4.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🍬 Panier N°4 - L'Artisanat Sucré
+</h2>
+
+<div class="price">40 €</div>
+
+<p class="description">
+Un coffret cadeau qui rassemble les douceurs les plus emblématiques de Montpellier et de la région. Une excellente idée de souvenir gourmand.
+</p>
+
+<ul>
+<li>Zézettes de Sète</li>
+<li>Navettes à la fleur d'oranger</li>
+<li>Grisettes de Montpellier</li>
+<li>Calissons artisanaux</li>
+<li>Roudoudous traditionnels</li>
+</ul>
+
+<div class="quantity-box">
+<button class="quantity-btn" onclick="minus(this)">-</button>
+<span class="quantity">1</span>
+<button class="quantity-btn" onclick="plus(this)">+</button>
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier5.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🌱 Panier N°5 - Apéritif Végétal
+</h2>
+
+<div class="price">32 €</div>
+
+<p class="description">
+Une sélection méditerranéenne 100 % végétale mettant à l'honneur les légumes du soleil et les saveurs authentiques du Languedoc.
+</p>
+
+<ul>
+<li>Tapenade noire à la truffe</li>
+<li>Caviar d'aubergine artisanal</li>
+<li>Poivrons rouges grillés marinés</li>
+<li>Crackers aux graines et romarin</li>
+</ul>
+
+<div class="quantity-box">
+<button class="quantity-btn" onclick="minus(this)">-</button>
+<span class="quantity">1</span>
+<button class="quantity-btn" onclick="plus(this)">+</button>
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier6.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🫒 Panier N°6 - L'Or Vert du Languedoc
+</h2>
+
+<div class="price">50 €</div>
+
+<p class="description">
+Un coffret raffiné autour de deux trésors emblématiques de notre terroir : l'huile d'olive et le miel de garrigue.
+</p>
+
+<ul>
+<li>Huile d'olive AOP Nîmes</li>
+<li>Miel de garrigue artisanal</li>
+<li>Savon à l'huile d'olive et lavande</li>
+<li>Fleur de sel de Camargue</li>
+<li>Confiture d'abricots du Roussillon</li>
+<li>Ramequin en céramique locale</li>
+</ul>
+
+<div class="quantity-box">
+<button class="quantity-btn" onclick="minus(this)">-</button>
+<span class="quantity">1</span>
+<button class="quantity-btn" onclick="plus(this)">+</button>
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier7.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+🦆 Panier N°7 - Table de Fêtes
+</h2>
+
+<div class="price">78 €</div>
+
+<p class="description">
+Une sélection premium destinée aux amateurs d'épicerie fine et aux grandes occasions. L'élégance de la gastronomie du Sud.
+</p>
+
+<ul>
+<li>Foie gras de canard entier</li>
+<li>Confiture de figues au poivre de Timut</li>
+<li>Muscat de Lunel</li>
+<li>Pain d'épices aux figues</li>
+<li>Champignons cuisinés à l'ail et persil</li>
+</ul>
+
+<div class="quantity-box">
+<button class="quantity-btn" onclick="minus(this)">-</button>
+<span class="quantity">1</span>
+<button class="quantity-btn" onclick="plus(this)">+</button>
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+<div class="basket-card">
+
+<img src="panier8.jpg" class="basket-image">
+
+<div class="basket-content">
+
+<h2 class="basket-title">
+⭐ Panier N°8 - L'Épicurien
+</h2>
+
+<div class="price">85 €</div>
+
+<p class="description">
+Le panier découverte ultime. Une véritable invitation à explorer toutes les facettes de la gastronomie languedocienne au travers d'une sélection prestigieuse.
+</p>
+
+<ul>
+<li>Vin rouge Terrasses du Larzac</li>
+<li>Tapenade noire à la tomate séchée</li>
+<li>Moules en escabèche</li>
+<li>Zézettes de Sète</li>
+<li>Miel de garrigue</li>
+<li>Croûtons artisanaux</li>
+<li>Pâte à tartiner au citron</li>
+<li>Torchon souvenir Montpellier</li>
+</ul>
+
+<div class="quantity-box">
+<button class="quantity-btn" onclick="minus(this)">-</button>
+<span class="quantity">1</span>
+<button class="quantity-btn" onclick="plus(this)">+</button>
+</div>
+
+<button class="order-btn">
+Commander
+</button>
+
+</div>
+</div>
+
+
+</div>
+
+<div class="footer">
+
+<img src="icon-192.png">
+
+<p>
+Nostos Collection • Créateur de souvenirs mémorables
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function plus(btn){
+
+let qty =
+btn.parentElement.querySelector(".quantity");
+
+qty.innerText =
+parseInt(qty.innerText)+1;
+
+}
+
+function minus(btn){
+
+let qty =
+btn.parentElement.querySelector(".quantity");
+
+let value =
+parseInt(qty.innerText);
+
+if(value>1){
+qty.innerText=value-1;
+}
+
+}
+
+</script>
+
+</body>
+</html>
